@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                sh 'make' 
+                archiveArtifacts artifacts: 'Practicajs.js', fingerprint: true
             }
         }
         stage('Test') {
