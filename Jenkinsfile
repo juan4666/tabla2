@@ -23,8 +23,11 @@ node {
         sh 'docker rmi -f app localhost:5000/app'
       }
     }
+<<<<<<< HEAD:jenkinsfile
   }
   catch (err) {
     throw err
   }
 }
+=======
+>>>>>>> 0dcadc6e93a3a65a7684b37b0b76be0e25944859:Jenkinsfile
